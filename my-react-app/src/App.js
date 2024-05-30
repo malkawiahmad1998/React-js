@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Paragraph from './newParagraph';
+import newImage from './newImage';
+
 import {BrowserRouter,Link,Route,Routes} from "react-router-dom"
 
 
@@ -9,10 +11,10 @@ function App() {
     <BrowserRouter>
   <div>
     <ul>
-      <Link to = "/newParagraph">gg </Link>
+      <Link to = "/newImage">gg </Link>
     </ul>
     <Routes>
-      <Route path = "/newParagraph" element = {<Paragraph />}></Route>
+      <Route path = "/newImage" element = {<newImage />}></Route>
     </Routes>  
   </div>
 
