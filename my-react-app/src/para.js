@@ -1,4 +1,4 @@
-function newImage() {
+function Para() {
     return(
         <div>
             <p>Hello world with react JS</p>
@@ -9,4 +9,4 @@ function newImage() {
     
 }
 
-export default newImage;
+export default Para;
