@@ -10,8 +10,11 @@ import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
+import  Table  from './Components/table';
 
 function App() {
+  const [value, setValue] = useState();
+
   return(
     <BrowserRouter>
       <div>
@@ -21,14 +24,16 @@ function App() {
           <Link to = "/classComponent">Class Component</Link>
           <br></br>
           <Link to = "/Counter">Counter</Link>
+          <br></br>
+
+          <Link to = "/table">table</Link>
 
         </ul>
         </div>
         <Button variant="contained">Hello world</Button>
-  export default function BasicRating() {
-  const [value, setValue] = React.useState<number | null>(2);
+  
 
-  return (
+  
     <Box
       sx={{
         '& > legend': { mt: 2 },
@@ -49,13 +54,14 @@ function App() {
       <Typography component="legend">No rating given</Typography>
       <Rating name="no-value" value={null} />
     </Box>
-  );
-}
+  
+
 
         <Routes>
           <Route path = "/para" element = {<Para />}></Route>
           <Route path = "/classComponent" element = {<ClassPage />}></Route>
           <Route path = "/Counter" element = {<Counter />}></Route>
+          <Route path = "/table" element = {<Table />}></Route>
 
         </Routes>  
       
